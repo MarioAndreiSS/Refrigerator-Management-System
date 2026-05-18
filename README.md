@@ -15,4 +15,4 @@ A simple Java Console Application that manages an inventory of refrigerators. Th
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/frigider-management.git](https://github.com/YOUR_USERNAME/frigider-management.git)
+   git clone https://github.com/MarioAndreiSS/Refrigerator-Management-System.git
