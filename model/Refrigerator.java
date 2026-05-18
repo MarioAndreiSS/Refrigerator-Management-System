@@ -1,7 +1,7 @@
-package com.App.model;
+package model;
 
 /**
- * Represents the Refrigerator entity with its specific properties.
+ * Represents a Refrigerator entity with its technical specifications and pricing.
  */
 public class Refrigerator {
     private String brand; 
@@ -11,7 +11,9 @@ public class Refrigerator {
     private int netVolume;
     private double price;
 
-    // Constructor
+    /**
+     * Constructs a new Refrigerator instance.
+     */
     public Refrigerator(String brand, String coolingSystem, String energyClass, int doorsCount, int netVolume, double price) { 
         this.brand = brand;
         this.coolingSystem = coolingSystem;
@@ -42,13 +44,9 @@ public class Refrigerator {
 
     @Override
     public String toString() {
-        return "Refrigerator{" +
-                "Brand='" + brand + '\'' +
-                ", Cooling System='" + coolingSystem + '\'' +
-                ", Energy Class='" + energyClass + '\'' +
-                ", Doors Count=" + doorsCount +
-                ", Net Volume=" + netVolume + "L" +
-                ", Price=" + price + " USD" +
-                '}';
+        return String.format(
+            "Refrigerator [Brand=%s, Cooling System=%s, Energy Class=%s, Doors=%d, Volume=%dL, Price=$%.2f]",
+            brand, coolingSystem, energyClass, doorsCount, netVolume, price
+        );
     }
 }
