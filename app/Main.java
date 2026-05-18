@@ -112,7 +112,7 @@ public class Main {
             System.out.println("\n--- 7. Generated Matrix ---");
             int mDim = refrigerators.length;
             int[][] matrix = new int[mDim][mDim];
-            int defaultStudentValue = 5;
+            int defaultValue = 5;
 
             for (int i = 0; i < mDim; i++) {
                 for (int j = 0; j < mDim; j++) {
