@@ -1,6 +1,6 @@
-package com.App;
+package app;
 
-import com.App.model.Refrigerator;
+import model.Refrigerator;
 import java.util.Scanner;
 
 public class Main {
@@ -95,7 +95,7 @@ public class Main {
             System.out.println("Deletion complete! Updated stock inventory:");
             for (Refrigerator r : refrigerators) System.out.println(r);
 
-            // 6. Sort the array by Net Volume (Bubble Sort)
+            // 6. Sort the array by Net Volume (Selection Sort)
             System.out.println("\n--- 6. Sorted by Net Volume ---");
             for (int i = 0; i < refrigerators.length - 1; i++) {
                 for (int j = i + 1; j < refrigerators.length; j++) {
