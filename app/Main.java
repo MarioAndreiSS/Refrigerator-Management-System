@@ -119,7 +119,7 @@ public class Main {
                     if (i == j) {
                         matrix[i][j] = refrigerators[i].getNetVolume(); // Main diagonal
                     } else {
-                        matrix[i][j] = defaultStudentValue; // Non-diagonal elements
+                        matrix[i][j] = defaultValue; // Non-diagonal elements
                     }
                 }
             }
